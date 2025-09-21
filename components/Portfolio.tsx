@@ -88,7 +88,7 @@ const Portfolio: React.FC = () => {
   }, [scrollYProgress])
 
   // Intersection Observer for counter animation
-  const isStatsInView = useInView(statsRef, { once: true, threshold: 0.3 })
+  const isStatsInView = useInView(statsRef, { once: true, amount: 0.3 })
 
   useEffect(() => {
     if (isStatsInView) {
