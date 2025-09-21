@@ -278,26 +278,22 @@ const Portfolio: React.FC = () => {
   // Animation variants
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6, ease: "easeOut" }
+    animate: { opacity: 1, y: 0 }
   }
 
   const fadeInLeft = {
     initial: { opacity: 0, x: -60 },
-    animate: { opacity: 1, x: 0 },
-    transition: { duration: 0.6, ease: "easeOut" }
+    animate: { opacity: 1, x: 0 }
   }
 
   const fadeInRight = {
     initial: { opacity: 0, x: 60 },
-    animate: { opacity: 1, x: 0 },
-    transition: { duration: 0.6, ease: "easeOut" }
+    animate: { opacity: 1, x: 0 }
   }
 
   const scaleIn = {
     initial: { opacity: 0, scale: 0.8 },
-    animate: { opacity: 1, scale: 1 },
-    transition: { duration: 0.6, ease: "easeOut" }
+    animate: { opacity: 1, scale: 1 }
   }
 
   const staggerContainer = {
@@ -469,6 +465,7 @@ const Portfolio: React.FC = () => {
             >
               <motion.div
                 variants={fadeInUp}
+                transition={{ duration: 0.6, ease: "easeOut" }}
                 className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold mb-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -479,6 +476,7 @@ const Portfolio: React.FC = () => {
               
               <motion.h1
                 variants={fadeInUp}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
                 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight"
               >
                 <span className="bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-clip-text text-transparent">
@@ -492,6 +490,7 @@ const Portfolio: React.FC = () => {
               
               <motion.p
                 variants={fadeInUp}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
                 className="text-xl text-gray-600 mb-8 leading-relaxed max-w-xl"
               >
                 Build Industry Recognition and Brand Authority to establish you as the industry leader. 
@@ -500,6 +499,7 @@ const Portfolio: React.FC = () => {
               
               <motion.div
                 variants={fadeInUp}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
                 className="flex flex-col sm:flex-row gap-4 mb-8"
               >
                 <motion.a
@@ -529,6 +529,7 @@ const Portfolio: React.FC = () => {
               {/* Trust Indicators */}
               <motion.div
                 variants={fadeInUp}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
                 className="flex items-center space-x-6 text-sm text-gray-500"
               >
                 <div className="flex items-center">
